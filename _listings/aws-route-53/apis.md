@@ -40,7 +40,7 @@ apis:
   tags: Traffic
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstances-hostedzoneid-hostedzoneidmarker-amp;maxitems-maxitems-amp;trafficpolicyinstancename-trafficpolicyinstancenamemarker-amp;trafficpolicyinstancetype-trafficpolicyinstancetypemarker-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstances-hostedzone-id-hostedzoneid-amp;maxitems-maxitems-amp;trafficpolicyinstancename-trafficpolicyinstancenamemarker-amp;trafficpolicyinstancetype-trafficpolicyinstancetypemarker-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/Route53/latest/APIReference/
