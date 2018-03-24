@@ -20,8 +20,8 @@ tags:
 - Bots
 - Applications
 - API LIfeycle
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-24"
+modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/akamai/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -33,7 +33,7 @@ apis:
   tags: Traffic
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/akamai/events-v2-accountid-events-eventid-trafficdata-srip-sourcebandwidth-slotid-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/akamai/data-dns-v1-traffic-zone-start,start-time,end,end-time,end-time,time-zone,include-estimates-get.md
 x-common:
 - type: x-base
   url: https://api.ccu.akamai.com
