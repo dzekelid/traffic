@@ -33,7 +33,7 @@ apis:
   tags: Traffic
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/akamai/data-dns-v1-traffic-zone-start,start-time,end,end-time,end-time,time-zone,include-estimates-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/akamai/events-v2-accountid-events-eventid-trafficdata-cpcode-edge-bandwidth-cpcode-get.md
 x-common:
 - type: x-base
   url: https://api.ccu.akamai.com
