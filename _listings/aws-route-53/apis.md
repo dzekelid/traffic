@@ -41,29 +41,36 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstances-trafficpolicy-amp;hostedzoneid-hostedzoneidmarker-id-trafficpolicyid-amp;maxitems-maxitems-amp;trafficpolicyinstancename-trafficpolicyinstancenamemarker-amp;trafficpolicyinstancetype-trafficpolicyinstancetypemarker-get.md
-- name: AWS Route 53 API Update Traffic Policy Instance
-  description: Updates the resource record sets in a specified hosted zone that were
-    created based onthe settings in a specified traffic policy version.Send a POST
-    request to the /2013-04-01/trafficpolicyinstance/traffic policy ID            resource.
-    The request body must include a document with anUpdateTrafficPolicyInstanceRequest
-    element.When you update a traffic policy instance, Amazon Route 53 continues to
-    respond to DNS queriesfor the root resource record set name (such as example.com)
-    while it replaces one group ofresource record sets with another. Amazon Route
-    53 performs the following operations:Amazon Route 53 creates a new group of resource
-    record sets based on the specified trafficpolicy. This is true regardless of how
-    substantial the differences are between theexisting resource record sets and the
-    new resource record sets. When all of the new resource record sets have been created,
-    Amazon Route 53 starts to respondto DNS queries for the root resource record set
-    name (such as example.com) by using thenew resource record sets.Amazon Route 53
-    deletes the old group of resource record sets that are associated with theroot
-    resource record set name.
+- name: AWS Route 53 API List Traffic Policy Instances By Policy
+  description: 'Gets information about the traffic policy instances that you created
+    by using a specifytraffic policy version.NoteAfter you submit a CreateTrafficPolicyInstance
+    or anUpdateTrafficPolicyInstance request, there''s a brief delay while Amazon
+    Route 53creates the resource record sets that are specified in the traffic policy
+    definition. Formore information, see the State response element.Send a GET request
+    to the /Route 53 APIversion/trafficpolicyinstance resource and include the ID
+    and version ofthe traffic policy.Amazon Route 53 returns a maximum of 100 items
+    in each response. If you have a lot of trafficpolicy instances, you can use the
+    MaxItems parameter to list them in groups of upto 100.The response includes five
+    values that help you navigate from one group ofMaxItems traffic policy instances
+    to the next:             IsTruncated               If the value of IsTruncated
+    in the response is true,there are more traffic policy instances associated with
+    the specified trafficpolicy.If IsTruncated is false, this response includes the
+    lasttraffic policy instance that is associated with the specified traffic policy.             MaxItems               The
+    value that you specified for the MaxItems parameter in the requestthat produced
+    the current response.                  HostedZoneIdMarker, TrafficPolicyInstanceNameMarker,
+    and TrafficPolicyInstanceTypeMarker               If IsTruncated is true, these
+    values in the responserepresent the first traffic policy instance in the next
+    group of MaxItemstraffic policy instances. To list more traffic policy instances,
+    make another call toListTrafficPolicyInstancesByPolicy, and specify these values
+    in thecorresponding request parameters.If IsTruncated is false, all three elements
+    are omittedfrom the response.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
   baseURL: http:://{host}//
   tags: Traffic
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstance-id-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstances-trafficpolicy-hostedzoneid-hostedzoneidmarker-id-trafficpolicyid-maxitems-maxitems-trafficpolicyinstancename-trafficpolicyinstancenamemarker-trafficpolicyinstancetype-trafficpolicyinstancetypemarker-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/Route53/latest/APIReference/
