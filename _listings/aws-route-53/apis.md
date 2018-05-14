@@ -41,21 +41,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstances-trafficpolicy-amp;hostedzoneid-hostedzoneidmarker-id-trafficpolicyid-amp;maxitems-maxitems-amp;trafficpolicyinstancename-trafficpolicyinstancenamemarker-amp;trafficpolicyinstancetype-trafficpolicyinstancetypemarker-get.md
-- name: AWS Route 53 API Get Traffic Policy Instance
-  description: Gets information about a specified traffic policy instance.Send a GET
-    request to the /Amazon Route 53 APIversion/trafficpolicyinstance resource.NoteAfter
-    you submit a CreateTrafficPolicyInstance or anUpdateTrafficPolicyInstance request,
-    there's a brief delay while Amazon Route 53creates the resource record sets that
-    are specified in the traffic policy definition. Formore information, see the State
-    response element.NoteIn the Amazon Route 53 console, traffic policy instances
-    are known as policy records.
+- name: AWS Route 53 API Get Traffic Policy Instance Count
+  description: Gets the number of traffic policy instances that are associated with
+    the current AWSaccount.To get the number of traffic policy instances, send a GET
+    request to the/2013-04-01/trafficpolicyinstancecount resource.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
   baseURL: http:://{host}//
   tags: Traffic
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstance-id-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstancecount-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/Route53/latest/APIReference/
