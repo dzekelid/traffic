@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Akamai Merged API
+  title: Akamai API Get Edge Bandwidth per CP Code
+  description: Get Edge Bandwidth per CP Code
   version: 1.0.0
+host: developer.akamai.com
+basePath: /
 schemes:
 - http
 produces:
@@ -16,15 +19,15 @@ paths:
       description: Get Edge Bandwidth per CP Code
       operationId: eventsv2accountideventseventidtrafficdatacpcodeedgebandwidthcpcode
       parameters:
-      - in: String
+      - in: query
         name: accountId
         description: Unique identifier for the account
         type: string
-      - in: Number
+      - in: query
         name: cpcode
         description: The CP code associated with the given event
         type: string
-      - in: Number
+      - in: query
         name: eventId
         description: Unique identifier for the event
         type: string
