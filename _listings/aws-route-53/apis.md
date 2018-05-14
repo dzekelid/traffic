@@ -41,31 +41,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstances-trafficpolicy-amp;hostedzoneid-hostedzoneidmarker-id-trafficpolicyid-amp;maxitems-maxitems-amp;trafficpolicyinstancename-trafficpolicyinstancenamemarker-amp;trafficpolicyinstancetype-trafficpolicyinstancetypemarker-get.md
-- name: AWS Route 53 API List Traffic Policy Versions
-  description: 'Gets information about all of the versions for a specified traffic
-    policy.Send a GET request to the /Amazon Route 53 APIversion/trafficpolicy resource
-    and specify the ID of the traffic policyfor which you want to list versions.Amazon
-    Route 53 returns a maximum of 100 items in each response. If you have a lot of
-    trafficpolicies, you can use the maxitems parameter to list them in groups of
-    up to100.The response includes three values that help you navigate from one group
-    ofmaxitems traffic policies to the next:             IsTruncated           If
-    the value of IsTruncated in the response is true,there are more traffic policy
-    versions associated with the specified trafficpolicy.If IsTruncated is false,
-    this response includes the lasttraffic policy version that is associated with
-    the specified traffic policy.             TrafficPolicyVersionMarker           The
-    ID of the next traffic policy version that is associated with the current AWSaccount.
-    If you want to list more traffic policies, make another call toListTrafficPolicyVersions,
-    and specify the value of theTrafficPolicyVersionMarker element in theTrafficPolicyVersionMarker
-    request parameter.If IsTruncated is false, Amazon Route 53 omits theTrafficPolicyVersionMarker
-    element from the response.             MaxItems           The value that you specified
-    for the MaxItems parameter in the requestthat produced the current response.'
+- name: AWS Route 53 API Update Traffic Policy Comment
+  description: Updates the comment for a specified traffic policy version.Send a POST
+    request to the /2013-04-01/trafficpolicy/ resource.The request body must include
+    a document with anUpdateTrafficPolicyCommentRequest element.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
   baseURL: http:://{host}//
   tags: Traffic
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicies-id-versions-maxitems-maxitems-trafficpolicyversion-trafficpolicyversionmarker-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicy-id-version-post.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/Route53/latest/APIReference/
