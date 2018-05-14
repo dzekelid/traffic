@@ -41,17 +41,31 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstances-trafficpolicy-amp;hostedzoneid-hostedzoneidmarker-id-trafficpolicyid-amp;maxitems-maxitems-amp;trafficpolicyinstancename-trafficpolicyinstancenamemarker-amp;trafficpolicyinstancetype-trafficpolicyinstancetypemarker-get.md
-- name: AWS Route 53 API Get Traffic Policy Instance Count
-  description: Gets the number of traffic policy instances that are associated with
-    the current AWSaccount.To get the number of traffic policy instances, send a GET
-    request to the/2013-04-01/trafficpolicyinstancecount resource.
+- name: AWS Route 53 API List Traffic Policies
+  description: 'Gets information about the latest version for every traffic policy
+    that is associatedwith the current AWS account. Send a GET request to the /Amazon
+    Route 53API version/trafficpolicy resource.Amazon Route 53 returns a maximum of
+    100 items in each response. If you have a lot of trafficpolicies, you can use
+    the maxitems parameter to list them in groups of up to100.The response includes
+    three values that help you navigate from one group ofmaxitems traffic policies
+    to the next:             IsTruncated           If the value of IsTruncated in
+    the response is true,there are more traffic policies associated with the current
+    AWS account.If IsTruncated is false, this response includes the lasttraffic policy
+    that is associated with the current account.             TrafficPolicyIdMarker           If
+    IsTruncated is true,TrafficPolicyIdMarker is the ID of the first traffic policy
+    in the nextgroup of MaxItems traffic policies. If you want to list more trafficpolicies,
+    make another call to ListTrafficPolicies, and specify the value ofthe TrafficPolicyIdMarker
+    element from the response in theTrafficPolicyIdMarker request parameter.If IsTruncated
+    is false, theTrafficPolicyIdMarker element is omitted from the response.             MaxItems           The
+    value that you specified for the MaxItems parameter in the requestthat produced
+    the current response.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
   baseURL: http:://{host}//
   tags: Traffic
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstancecount-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicies-maxitems-maxitems-trafficpolicyid-trafficpolicyidmarker-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/Route53/latest/APIReference/
