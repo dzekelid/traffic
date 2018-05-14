@@ -1,8 +1,19 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Route 53 API
+  title: AWS Route 53 API Create Traffic Policy Version
   version: 1.0.0
+  description: Creates a new version of an existing traffic policy. When you create
+    a new version of atraffic policy, you specify the ID of the traffic policy that
+    you want to update and aJSON-formatted document that describes the new version.
+    You use traffic policies to createmultiple DNS resource record sets for one domain
+    name (such as example.com) or one subdomainname (such as www.example.com). You
+    can create a maximum of 1000 versions of a traffic policy.If you reach the limit
+    and need to create another version, you'll need to start a new trafficpolicy.Send
+    a POST request to the /2013-04-01/trafficpolicy/ resource. The request body includes
+    a document witha CreateTrafficPolicyVersionRequest element. The response returns
+    theCreateTrafficPolicyVersionResponse element, which contains information aboutthe
+    new version of the traffic policy.
 schemes:
 - http
 produces:
