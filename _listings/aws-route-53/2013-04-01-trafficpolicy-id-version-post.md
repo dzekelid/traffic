@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Route 53 API
+  title: AWS Route 53 API Update Traffic Policy Comment
   version: 1.0.0
+  description: Updates the comment for a specified traffic policy version.Send a POST
+    request to the /2013-04-01/trafficpolicy/ resource.The request body must include
+    a document with anUpdateTrafficPolicyCommentRequest element.
 schemes:
 - http
 produces:
