@@ -1,8 +1,17 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Route 53 API
+  title: AWS Route 53 API Create Traffic Policy Instance
   version: 1.0.0
+  description: Creates resource record sets in a specified hosted zone based on the
+    settings in aspecified traffic policy version. In addition, CreateTrafficPolicyInstanceassociates
+    the resource record sets with a specified domain name (such as example.com) orsubdomain
+    name (such as www.example.com). Amazon Route 53 responds to DNS queries for the
+    domain orsubdomain name by using the resource record sets that CreateTrafficPolicyInstancecreated.Send
+    a POST request to the /2013-04-01/trafficpolicyinstance resource. The request
+    body must include adocument with a CreateTrafficPolicyRequest element. The response
+    returns theCreateTrafficPolicyInstanceResponse element, which contains information
+    aboutthe traffic policy instance.
 schemes:
 - http
 produces:
