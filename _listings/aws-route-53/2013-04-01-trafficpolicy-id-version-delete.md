@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Route 53 API
+  title: AWS Route 53 API Delete Traffic Policy
   version: 1.0.0
+  description: Deletes a traffic policy.Send a DELETE request to the /Amazon Route
+    53 APIversion/trafficpolicy resource.
 schemes:
 - http
 produces:
