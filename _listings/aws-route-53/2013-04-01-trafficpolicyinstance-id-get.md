@@ -1,8 +1,15 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Route 53 API
+  title: AWS Route 53 API Get Traffic Policy Instance
   version: 1.0.0
+  description: Gets information about a specified traffic policy instance.Send a GET
+    request to the /Amazon Route 53 APIversion/trafficpolicyinstance resource.NoteAfter
+    you submit a CreateTrafficPolicyInstance or anUpdateTrafficPolicyInstance request,
+    there's a brief delay while Amazon Route 53creates the resource record sets that
+    are specified in the traffic policy definition. Formore information, see the State
+    response element.NoteIn the Amazon Route 53 console, traffic policy instances
+    are known as policy records.
 schemes:
 - http
 produces:
