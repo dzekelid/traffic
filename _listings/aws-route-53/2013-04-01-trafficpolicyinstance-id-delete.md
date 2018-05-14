@@ -1,8 +1,12 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Route 53 API
+  title: AWS Route 53 API Delete Traffic Policy Instance
   version: 1.0.0
+  description: Deletes a traffic policy instance and all of the resource record sets
+    that Amazon Route 53created when you created the instance.Send a DELETE request
+    to the /Amazon Route 53 APIversion/trafficpolicy/traffic policy instance ID            resource.NoteIn
+    the Amazon Route 53 console, traffic policy instances are known as policy records.
 schemes:
 - http
 produces:
