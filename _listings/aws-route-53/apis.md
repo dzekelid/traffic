@@ -41,17 +41,29 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstances-trafficpolicy-amp;hostedzoneid-hostedzoneidmarker-id-trafficpolicyid-amp;maxitems-maxitems-amp;trafficpolicyinstancename-trafficpolicyinstancenamemarker-amp;trafficpolicyinstancetype-trafficpolicyinstancetypemarker-get.md
-- name: AWS Route 53 API Update Traffic Policy Comment
-  description: Updates the comment for a specified traffic policy version.Send a POST
-    request to the /2013-04-01/trafficpolicy/ resource.The request body must include
-    a document with anUpdateTrafficPolicyCommentRequest element.
+- name: AWS Route 53 API Update Traffic Policy Instance
+  description: Updates the resource record sets in a specified hosted zone that were
+    created based onthe settings in a specified traffic policy version.Send a POST
+    request to the /2013-04-01/trafficpolicyinstance/traffic policy ID            resource.
+    The request body must include a document with anUpdateTrafficPolicyInstanceRequest
+    element.When you update a traffic policy instance, Amazon Route 53 continues to
+    respond to DNS queriesfor the root resource record set name (such as example.com)
+    while it replaces one group ofresource record sets with another. Amazon Route
+    53 performs the following operations:Amazon Route 53 creates a new group of resource
+    record sets based on the specified trafficpolicy. This is true regardless of how
+    substantial the differences are between theexisting resource record sets and the
+    new resource record sets. When all of the new resource record sets have been created,
+    Amazon Route 53 starts to respondto DNS queries for the root resource record set
+    name (such as example.com) by using thenew resource record sets.Amazon Route 53
+    deletes the old group of resource record sets that are associated with theroot
+    resource record set name.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
   baseURL: http:://{host}//
   tags: Traffic
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicy-id-version-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstance-id-post.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/Route53/latest/APIReference/
