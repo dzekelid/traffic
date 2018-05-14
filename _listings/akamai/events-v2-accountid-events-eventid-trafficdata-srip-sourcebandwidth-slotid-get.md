@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Akamai Merged API
+  title: Akamai API Get SRIP Bandwidth per Slot
+  description: Get SRIP Bandwidth per Slot
   version: 1.0.0
+host: developer.akamai.com
+basePath: /
 schemes:
 - http
 produces:
@@ -16,15 +19,15 @@ paths:
       description: Get SRIP Bandwidth per Slot
       operationId: eventsv2accountideventseventidtrafficdatasripsourcebandwidthslotid
       parameters:
-      - in: String
+      - in: query
         name: accountId
         description: Unique identifier for the account
         type: string
-      - in: Number
+      - in: query
         name: eventId
         description: Unique identifier for the event
         type: string
-      - in: String
+      - in: query
         name: slotId
         description: Unique identifier for the slot
         type: string
