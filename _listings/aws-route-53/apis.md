@@ -41,7 +41,39 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstances-trafficpolicy-amp;hostedzoneid-hostedzoneidmarker-id-trafficpolicyid-amp;maxitems-maxitems-amp;trafficpolicyinstancename-trafficpolicyinstancenamemarker-amp;trafficpolicyinstancetype-trafficpolicyinstancetypemarker-get.md
+- name: AWS Route 53 API Create Traffic Policy
+  description: Creates a traffic policy, which you use to create multiple DNS resource
+    record sets forone domain name (such as example.com) or one subdomain name (such
+    aswww.example.com).Send a POST request to the /2013-04-01/trafficpolicy resource.
+    The request body must include a documentwith a CreateTrafficPolicyRequest element.
+    The response includes theCreateTrafficPolicyResponse element, which contains information
+    about the newtraffic policy.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
+  humanURL: https://aws.amazon.com/route53/
+  baseURL: http:://{host}//
+  tags: Traffic
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicy-post.md
 x-common:
+- type: x-documentation
+  url: http://docs.aws.amazon.com/Route53/latest/APIReference/
+- type: x-faq
+  url: https://aws.amazon.com/route53/faqs/
+- type: x-forum
+  url: https://forums.aws.amazon.com/forum.jspa?forumID=87
+- type: x-pricing
+  url: https://aws.amazon.com/route53/pricing/
+- type: x-registrar-policies
+  url: https://aws.amazon.com/route53/amazon-registrar-policies/
+- type: x-service-health
+  url: http://status.aws.amazon.com/
+- type: x-service-level-agreement
+  url: https://aws.amazon.com/route53/sla
+- type: x-sla
+  url: https://aws.amazon.com/route53/sla/
+- type: x-website
+  url: https://aws.amazon.com/route53/
 - type: x-documentation
   url: http://docs.aws.amazon.com/Route53/latest/APIReference/
 - type: x-faq
