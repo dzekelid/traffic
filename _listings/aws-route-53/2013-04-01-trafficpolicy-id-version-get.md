@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Route 53 API
+  title: AWS Route 53 API Get Traffic Policy
   version: 1.0.0
+  description: Gets information about a specific traffic policy version.Send a GET
+    request to the /Amazon Route 53 APIversion/trafficpolicy resource.
 schemes:
 - http
 produces:
