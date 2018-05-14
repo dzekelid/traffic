@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Akamai Merged API
+  title: Akamai API Get Request Data for Flash Live Streams
+  description: Get Request Data for Flash Live Streams
   version: 1.0.0
+host: developer.akamai.com
+basePath: /
 schemes:
 - http
 produces:
@@ -16,11 +19,11 @@ paths:
       description: Get Request Data for Flash Live Streams
       operationId: eventsv2accountideventseventidtrafficdataflegressrequests
       parameters:
-      - in: String
+      - in: query
         name: accountId
         description: Unique identifier for the account
         type: string
-      - in: Number
+      - in: query
         name: eventId
         description: Unique identifier for the event
         type: string
