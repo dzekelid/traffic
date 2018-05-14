@@ -41,23 +41,25 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstances-trafficpolicy-amp;hostedzoneid-hostedzoneidmarker-id-trafficpolicyid-amp;maxitems-maxitems-amp;trafficpolicyinstancename-trafficpolicyinstancenamemarker-amp;trafficpolicyinstancetype-trafficpolicyinstancetypemarker-get.md
-- name: AWS Route 53 API Create Traffic Policy Instance
-  description: Creates resource record sets in a specified hosted zone based on the
-    settings in aspecified traffic policy version. In addition, CreateTrafficPolicyInstanceassociates
-    the resource record sets with a specified domain name (such as example.com) orsubdomain
-    name (such as www.example.com). Amazon Route 53 responds to DNS queries for the
-    domain orsubdomain name by using the resource record sets that CreateTrafficPolicyInstancecreated.Send
-    a POST request to the /2013-04-01/trafficpolicyinstance resource. The request
-    body must include adocument with a CreateTrafficPolicyRequest element. The response
-    returns theCreateTrafficPolicyInstanceResponse element, which contains information
-    aboutthe traffic policy instance.
+- name: AWS Route 53 API Create Traffic Policy Version
+  description: Creates a new version of an existing traffic policy. When you create
+    a new version of atraffic policy, you specify the ID of the traffic policy that
+    you want to update and aJSON-formatted document that describes the new version.
+    You use traffic policies to createmultiple DNS resource record sets for one domain
+    name (such as example.com) or one subdomainname (such as www.example.com). You
+    can create a maximum of 1000 versions of a traffic policy.If you reach the limit
+    and need to create another version, you'll need to start a new trafficpolicy.Send
+    a POST request to the /2013-04-01/trafficpolicy/ resource. The request body includes
+    a document witha CreateTrafficPolicyVersionRequest element. The response returns
+    theCreateTrafficPolicyVersionResponse element, which contains information aboutthe
+    new version of the traffic policy.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AmazonRoute53.png
   humanURL: https://aws.amazon.com/route53/
   baseURL: http:://{host}//
   tags: Traffic
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicyinstance-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/aws-route-53/2013-04-01-trafficpolicy-id-post.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/Route53/latest/APIReference/
