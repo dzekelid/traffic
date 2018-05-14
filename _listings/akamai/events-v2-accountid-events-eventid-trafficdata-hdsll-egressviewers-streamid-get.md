@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Akamai Merged API
+  title: Akamai API Get Viewer Data for a Silverlight Live Stream
+  description: Get Viewer Data for a Silverlight Live Stream
   version: 1.0.0
+host: developer.akamai.com
+basePath: /
 schemes:
 - http
 produces:
@@ -16,15 +19,15 @@ paths:
       description: Get Viewer Data for a Silverlight Live Stream
       operationId: eventsv2accountideventseventidtrafficdatahdsllegressviewersstreamid
       parameters:
-      - in: String
+      - in: query
         name: accountId
         description: Unique identifier for the account
         type: string
-      - in: Number
+      - in: query
         name: eventId
         description: Unique identifier for the event
         type: string
-      - in: Number
+      - in: query
         name: streamId
         description: Unique identifier for the stream
         type: string
