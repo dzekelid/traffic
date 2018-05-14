@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Route 53 API
+  title: AWS Route 53 API Get Traffic Policy Instance Count
   version: 1.0.0
+  description: Gets the number of traffic policy instances that are associated with
+    the current AWSaccount.To get the number of traffic policy instances, send a GET
+    request to the/2013-04-01/trafficpolicyinstancecount resource.
 schemes:
 - http
 produces:
