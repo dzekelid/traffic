@@ -1,8 +1,23 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Route 53 API
+  title: AWS Route 53 API Update Traffic Policy Instance
   version: 1.0.0
+  description: Updates the resource record sets in a specified hosted zone that were
+    created based onthe settings in a specified traffic policy version.Send a POST
+    request to the /2013-04-01/trafficpolicyinstance/traffic policy ID            resource.
+    The request body must include a document with anUpdateTrafficPolicyInstanceRequest
+    element.When you update a traffic policy instance, Amazon Route 53 continues to
+    respond to DNS queriesfor the root resource record set name (such as example.com)
+    while it replaces one group ofresource record sets with another. Amazon Route
+    53 performs the following operations:Amazon Route 53 creates a new group of resource
+    record sets based on the specified trafficpolicy. This is true regardless of how
+    substantial the differences are between theexisting resource record sets and the
+    new resource record sets. When all of the new resource record sets have been created,
+    Amazon Route 53 starts to respondto DNS queries for the root resource record set
+    name (such as example.com) by using thenew resource record sets.Amazon Route 53
+    deletes the old group of resource record sets that are associated with theroot
+    resource record set name.
 schemes:
 - http
 produces:
