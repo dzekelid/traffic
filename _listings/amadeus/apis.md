@@ -7,13 +7,13 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sand
 x-kinRank: "8"
 x-alexaRank: "4309"
 tags: Traffic
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/amadeus/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Amadeus Get Travel Intelligence Flight Traffic
-  x-api-slug: amadeus
+- name: Amadeus - Get Travel Intelligence Flight Traffic
+  x-api-slug: travelintelligenceflighttraffic-get
   description: "The Flight Traffic API lets you find the origin and destination traffic
     summary between two journey points over a specified period.\nThe search returns
     number of flights & travelers for each origin and destination, ordered by popularity,
@@ -26,26 +26,19 @@ apis:
     intelligence for travel. Please see amadeus.com/travelintelligence for more information."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
   humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2//travel-intelligence/flight-traffic
-  tags: Airlines, Travel, Intelligence, Flight, Traffic
+  baseURL: https://api.sandbox.amadeus.com//v1.2
+  tags: Marketplace, Technology, Travel, Transportation, Airlines, API Provider, Hotels,
+    Profiles, Relative Data, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/amadeus/travelintelligenceflighttraffic-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/amadeus/travelintelligenceflighttraffic-get-openapi.md
-- name: Amadeus
-  x-api-slug: amadeus
-  description: Amadeus travel technology helps businesses connect to the global travel
-    ecosystem, manage operations more effectively and serve travellers better than
-    ever
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28139-sandbox-amadeus-com.jpg
-  humanURL: https://amadeus.com
-  baseURL: https://api.sandbox.amadeus.com//v1.2
-  tags: Traffic
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/amadeus/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://amadeus.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://amadeus.stack.network
 - type: x-crunchbase
   url: https://crunchbase.com/organization/amadeus
 - type: x-documentation

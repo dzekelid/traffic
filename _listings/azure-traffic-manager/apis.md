@@ -8,35 +8,16 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Traffic
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/azure-traffic-manager/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Azure Traffic Manager API Profiles Check Traffic Manager Relative Dns Name
-    Availability
-  x-api-slug: azure-traffic-manager-api
-  description: Checks the availability of a Traffic Manager Relative DNS name.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-traffic-improved-application-performance.png
-  humanURL: https://azure.microsoft.com/en-us/services/traffic-manager/
-  baseURL: ://management.azure.com////providers/Microsoft.Network/checkTrafficManagerNameAvailability
-  tags: Profiles Traffic Manager Relative Dns Name Availability
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/azure-traffic-manager/providersmicrosoft-networkchecktrafficmanagernameavailability-post-openapi.md
-- name: Azure Traffic Manager API
-  x-api-slug: azure-traffic-manager-api
-  description: 'Azure Traffic Manager gives you three methods for traffic routing:
-    failover, performance, or weighted round-robin. Choose the one that&rsquo;s right
-    for your application or scenario.'
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-traffic-improved-application-performance.png
-  humanURL: https://azure.microsoft.com/en-us/services/traffic-manager/
-  baseURL: ://management.azure.com//
-  tags: Traffic
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/traffic/master/_listings/azure-traffic-manager/openapi.md
+apis: []
 x-common:
+- type: x-api-gallery
+  url: http://azure.storage.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://azure.traffic.manager.stack.network
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/traffic-manager/
 - type: x-pricing
